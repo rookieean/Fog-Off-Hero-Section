@@ -27,9 +27,14 @@ body {
 
 .logo-image img{
     margin: 1.25rem;
-
+    width: 250px;
+    height: 50px;
     /* Fix Logic*/
     height: auto; /* agar aspek ratio tidak rusak */
+}
+
+.menu-navbar{
+    backdrop-filter: blur(5px);
 }
 
 /* Fix Logic */
@@ -38,7 +43,7 @@ body {
     list-style-type: none;
     background-color: aliceblue;
     margin: 1.25rem;    
-    padding: 1.25rem;
+    padding: 3rem;
     border-radius: 5rem;
 }
 
@@ -50,10 +55,20 @@ body {
 .menu-navbar ul li a{
     text-decoration: none;
     color: rgb(36, 70, 139);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: 600;
+
+    /* fix logic */
+    padding: 1rem 2 rem;
+    transform: all 0.3s ease;
+}
+
+.menu-navbar ul li a:hover{
+    background-color: rgb(213, 223, 230);
+    border-radius: 5rem;
+    padding: 2rem;
+    color: white;
 }
 
 /* Note for navbar Top
@@ -64,3 +79,77 @@ body {
 4. 
 
 */
+
+
+/* Main Section */
+.main-section {
+    margin: 12rem 3rem;
+}
+
+.heading h1{
+    font-size: 150px;
+    text-align: left;
+}
+
+.heading p{
+    font-size: 24px;
+    text-align: left;
+}
+
+.heading button{
+    padding: 1.25rem;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    font-size: 32px;
+    background-color: rgb(228, 3, 78);
+    color: white;
+    border-style: none;
+}
+
+.heading button:hover{
+    transform: translateY(-2px);
+    background-color: rgb(196, 2, 66);
+
+}
+
+
+/* Card Section */
+.card-products{
+    display: inline-grid;
+    gap: 5px;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.card-products h3{
+    font-size: 32px;
+}
+
+.card-products h4{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card-products button{
+    background-color: rgb(228, 3, 78);
+    padding: 1.25rem;
+    width: 10%;
+    border: none;
+    position: relative;
+    right: -590px;
+    border-radius: 2rem;
+}
+
+.card-products button:hover {
+    transform: translateY(-3px);
+}
+
+/* Feedback kedua 
+
+1. Tombol untuk card products (-590px)
+  klo pakai ini,  kemungkinana jika layar di perbesar makan akan timbul pergesaran
+  gunakah satuan vh (viewport width) agar menyesuaikan lebar layar pada nantinya
+
+2. 
