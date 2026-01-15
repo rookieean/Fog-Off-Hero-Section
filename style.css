@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("BG-Image.jpeg");
+    font-family: 'Poppins', sans-serif;
+    
+    /*Fix Logic*/
+    background-size: cover;
+    background-position: center;
+
+    /* use object-fit isnt sure :> */
+}
+
+.top-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    /* Fix Logic */
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo-image img{
+    margin: 1.25rem;
+
+    /* Fix Logic*/
+    height: auto; /* agar aspek ratio tidak rusak */
+}
+
+/* Fix Logic */
+.menu-navbar ul{
+    display: flex;
+    list-style-type: none;
+    background-color: aliceblue;
+    margin: 1.25rem;    
+    padding: 1.25rem;
+    border-radius: 5rem;
+}
+
+/* Fix Logic */
+.menu-navbar ul li{
+    margin: 0 1rem;
+}
+
+.menu-navbar ul li a{
+    text-decoration: none;
+    color: rgb(36, 70, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Note for navbar Top
+
+1. taruh display flex di parent (ul) bukan di setiap (li)
+2. gunakan object-fill untuk img / video, bukan ke background img
+3. pakai media queri agar responsive
+4. 
+
+*/
