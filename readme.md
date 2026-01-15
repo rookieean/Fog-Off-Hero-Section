@@ -3,3 +3,7 @@ A hero section from [Flux Academy - Learn Webflow: Ultimate Beginner Crash Cours
 
 ## Demo
 
+https://github.com/user-attachments/assets/1f8e9870-ce89-4bab-8ff3-637161ddbc59
+
+
+
